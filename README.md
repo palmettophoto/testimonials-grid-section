@@ -11,8 +11,8 @@ This is a solution to the [Testimonials grid section challenge on Frontend Mento
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://your-solution-url.com)
-- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
+- Solution URL: [Add solution URL here](https://github.com/palmettophoto/testimonials-grid-section.git))
+- Live Site URL: [Add live site URL here](https://palmettophoto.github.io/testimonials-grid-section/)
 
 ## My process
 
