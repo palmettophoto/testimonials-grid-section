@@ -1,0 +1,126 @@
+@import url('https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed:wght@500;600&display=swap');
+/* Moderate violet: hsl(263, 55%, 52%)
+Very dark grayish blue: hsl(217, 19%, 35%)
+Very dark blackish blue: hsl(219, 29%, 14%)
+White: hsl(0, 0%, 100%)
+
+### Neutral
+
+Light gray: hsl(0, 0%, 81%)
+Light grayish blue: hsl(210, 46%, 95%)
+
+font-family: 'Barlow Semi Condensed', sans-serif;
+
+*/
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+main {
+    min-height: 100vh;
+    background-color: rgba(139, 167, 179, 0.412);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.card {
+    font-family: 'Barlow Semi Condensed', sans-serif;
+    max-width: 1100px;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    /* grid-template-rows: 1fr, 1fr; */
+    gap: 2rem;
+
+    grid-template-areas:
+    'box1 box1 box2 box5'
+    'box3 box4 box4 box5';
+}
+
+/* styled cards  */
+.lt {
+    color: white;
+}
+.lt-verification {
+    opacity: 50%;
+}
+.dk {
+    color: hsl(217, 19%, 35%);
+}
+.dk-verification {
+    opacity: 50%;
+}
+
+p {
+    opacity: 0.7;
+    font-size: 13px;
+    line-height: 1.25rem;
+
+}
+.card-heading {
+    display: flex;
+    margin-bottom: 1rem;
+    font-size: 13px;
+    font-weight: 600;
+}
+.card-name {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.box {
+    border-radius: 15px;
+    padding: 2rem;
+}
+img {
+    border-radius: 50%;
+    border: 2px  hsla(0, 0%, 81%, 0.5) solid;
+    margin-right: 1rem;
+    height: 35px;
+}
+h2 {
+    margin-bottom: 1rem;
+    font-size: 1.2rem;
+    opacity: 0.8;
+}
+
+/* boxes  */
+.box1 {
+    grid-area: box1;
+    background-color: hsl(263, 55%, 52%);
+    background-image: url(./images/bg-pattern-quotation.svg);
+    background-repeat: no-repeat;
+    background-position-x: 90%;
+}
+.box2 {
+    grid-area: box2;
+    background-color: hsl(217, 19%, 35%);
+}
+.box3 {
+    grid-area: box3;
+    background-color: white;
+}
+.box4 {
+    grid-area: box4;
+    background-color: hsl(219, 29%, 14%);
+}
+.box5 {
+    grid-area: box5;
+    background-color: white;
+}
+
+@media (max-width: 900px) {
+    .card {
+        grid-template-columns: 1fr;
+        grid-template-areas:
+    'box1'
+    'box2'
+    'box3'
+    'box4'
+    'box5';
+    padding: 1.5rem;
+    margin-top: 2rem;
+    }
+}
